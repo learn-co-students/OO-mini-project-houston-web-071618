@@ -23,16 +23,17 @@ peanut_ingredient = Ingredient.new("peanuts")
 jelly_ingredient = Ingredient.new("jelly")
 
 #Allergen
-kelly.declare_allergen = Allergen.new(pasta_ingredient)
-kelly.declare_allergen = Allergen.new(peanut_ingredient)
-greg.declare_allergen = Allergen.new(cheese_ingredient)
+kelly.declare_allergen(pasta_ingredient)
+kelly.declare_allergen(peanut_ingredient)
+greg.declare_allergen(cheese_ingredient)
+macy.declare_allergen(cheese_ingredient)
 
 #RecipeCard
 #def add_recipe_card(recipe, date, rating)
 kelly.add_recipe_card(spaghetti_recipe, 1, 4)
 macy.add_recipe_card(pbandj_recipe, 1, 4)
 greg.add_recipe_card(pizza_recipe, 1, 1)
-hamzah.add_recipe_card(pizza_recipe 2, 4)
+hamzah.add_recipe_card(pizza_recipe, 2, 4)
 hamzah.add_recipe_card(pizza_recipe, 3, 5)
 
 RecipeCard.all
